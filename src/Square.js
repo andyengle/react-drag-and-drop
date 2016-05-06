@@ -1,24 +1,24 @@
 import React, { Component, PropTypes } from 'react';
 
 export default class Square extends Component {
-  render() {
-    const { black } = this.props;
-    const fill = black ? '#777' : 'white';
-    const stroke = black ? 'white' : '#777';
+    render() {
+        const { black } = this.props;
+        const fill = black ? '#EEE' : 'white';
+        const stroke = black ? 'white' : '#EEE';
 
-    return (
-      <div style={{
-        backgroundColor: fill,
-        color: stroke,
-        width: '100px',
-        height: '100px'
-      }}>
-        {this.props.children}
-      </div>
-    );
-  }
+        return (
+            <div style={{
+                backgroundColor: fill,
+                color: stroke,
+                width: '100px',
+                height: '100px'
+            }}>
+                {this.props.children}
+            </div>
+        );
+    }
 }
 
 Square.propTypes = {
-  black: PropTypes.bool
+    black: PropTypes.bool
 };

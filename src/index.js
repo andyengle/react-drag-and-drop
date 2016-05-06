@@ -6,8 +6,8 @@ import { observe } from './Game';
 const rootEl = document.getElementById('root');
 
 observe(knightPosition =>
-  ReactDOM.render(
-    <Board knightPosition={knightPosition} />,
-    rootEl
-  )
+    ReactDOM.render(
+        <Board knightPosition={knightPosition} />,
+        rootEl
+    )
 );
